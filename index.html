@@ -1,0 +1,64 @@
+---
+layout: default
+title: App Support
+---
+
+<div class="container">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <section class="app-info">
+    <h2>About the App</h2>
+    <p>Welcome to the official support page for [Your App Name]. This app helps users to [briefly describe what your app does].</p>
+  </section>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="faq-item">
+      <h3>How do I use this app?</h3>
+      <p>Our app is designed to be intuitive. Simply download it from the App Store, open it, and follow the on-screen instructions to get started.</p>
+    </div>
+    
+    <div class="faq-item">
+      <h3>Is my data secure?</h3>
+      <p>Yes, we take data security very seriously. All user data is encrypted and stored securely following industry best practices.</p>
+    </div>
+    
+    <div class="faq-item">
+      <h3>How do I report a bug?</h3>
+      <p>If you encounter any issues, please contact us using the form below or email us directly.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or feedback? We'd love to hear from you!</p>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    
+    <!-- Simple contact form -->
+    <form action="https://formspree.io/f/your-formspree-endpoint" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; {% raw %}{{ site.time | date: '%Y' }}{% endraw %} [Your App Name]. All rights reserved.</p>
+  </footer>
+</div>
