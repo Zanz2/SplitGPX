@@ -3,75 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support Page</title>
+    <title>Support Center</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
+            background-color: #f0f5ff;
+            color: #333;
             padding: 20px;
         }
-        h1 {
-            color: #333;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 40px;
         }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #2c5282;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #718096;
+            font-size: 1.1rem;
+        }
+        
+        h2 {
+            color: #2c5282;
+            font-size: 1.8rem;
+            margin: 30px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .faq-container {
+            display: grid;
+            gap: 20px;
+        }
+        
         .faq-item {
+            background-color: #f8fafc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c5282;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .answer {
+            color: #4a5568;
+        }
+        
+        .contact-section {
+            background-color: #ebf4ff;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .contact-section p {
             margin-bottom: 20px;
         }
-        .question {
-            font-weight: bold;
-            color: #2c5282;
+        
+        .contact-button {
+            display: inline-block;
+            background-color: #4299e1;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
         }
-        .answer {
-            margin-top: 5px;
+        
+        .contact-button:hover {
+            background-color: #3182ce;
         }
+        
         footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
+            margin-top: 50px;
             text-align: center;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #4299e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: #2c5282;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Support Page</h1>
-    
-    <h2>Frequently Asked Questions</h2>
-    
-    <div class="faq-item">
-        <p class="question">Q: How do I get started with your product?</p>
-        <p class="answer">A: To get started, simply download the app from our website and follow the installation instructions. Once installed, you can create an account and begin using all features.</p>
+    <div class="container">
+        <header>
+            <h1>Support Center</h1>
+            <p class="subtitle">Find answers to frequently asked questions or contact our support team</p>
+        </header>
+        
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <p class="question">How do I get started with your product?</p>
+                <p class="answer">To get started, simply download the app from our website and follow the installation instructions. Once installed, you can create an account and begin using all features.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="question">Is there a free trial available?</p>
+                <p class="answer">Yes, we offer a 14-day free trial with full access to all features. No credit card required to start your trial.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="question">How do I reset my password?</p>
+                <p class="answer">You can reset your password by clicking the "Forgot Password" link on the login page. We'll send you an email with instructions to create a new password.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="question">What payment methods do you accept?</p>
+                <p class="answer">We accept all major credit cards, PayPal, and bank transfers for annual subscriptions.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="question">How can I cancel my subscription?</p>
+                <p class="answer">You can cancel your subscription at any time from your account settings page. Your access will continue until the end of your current billing period.</p>
+            </div>
+        </div>
+        
+        <div class="contact-section">
+            <h2>Still Have Questions?</h2>
+            <p>If you couldn't find the answer to your question above, our support team is ready to help you.</p>
+            <a href="mailto:support@example.com" class="contact-button">Contact Support</a>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+            <p><a href="privacy_policy">Privacy Policy</a></p>
+        </footer>
     </div>
-    
-    <div class="faq-item">
-        <p class="question">Q: Is there a free trial available?</p>
-        <p class="answer">A: Yes, we offer a 14-day free trial with full access to all features. No credit card required to start your trial.</p>
-    </div>
-    
-    <div class="faq-item">
-        <p class="question">Q: How do I reset my password?</p>
-        <p class="answer">A: You can reset your password by clicking the "Forgot Password" link on the login page. We'll send you an email with instructions to create a new password.</p>
-    </div>
-    
-    <div class="faq-item">
-        <p class="question">Q: What payment methods do you accept?</p>
-        <p class="answer">A: We accept all major credit cards, PayPal, and bank transfers for annual subscriptions.</p>
-    </div>
-    
-    <div class="faq-item">
-        <p class="question">Q: How can I cancel my subscription?</p>
-        <p class="answer">A: You can cancel your subscription at any time from your account settings page. Your access will continue until the end of your current billing period.</p>
-    </div>
-    
-    <h2>Still Have Questions?</h2>
-    <p>If you couldn't find the answer to your question above, please feel free to contact our support team.</p>
-    
-    <footer>
-        <p><a href="mailto:support@example.com">Contact Support</a></p>
-        <p><a href="privacy_policy">Privacy Policy</a></p>
-    </footer>
 </body>
 </html>
 
