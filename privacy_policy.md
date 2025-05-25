@@ -1,14 +1,14 @@
-# Privacy Policy for Split GPX
+# Privacy Policy for Split GPX and Merge GPX
 
 **Effective Date: May 3, 2025**
 
 ## Introduction
 
-Welcome to Split GPX. We respect your privacy and are committed to protecting it. This Privacy Policy explains our practices regarding your information when you use our application.
+Welcome to the privacy policy page for Split GPX and Merge GPX. We respect your privacy and are committed to protecting it. This Privacy Policy explains our practices regarding your information when you use our application.
 
 ## Summary
 
-**Split GPX does not collect, store, or transmit any personal data.** All processing occurs locally on your device, and no information leaves your device through our application.
+**Split GPX and Merge GPX do not collect, store, or transmit any personal data.** All processing occurs locally on your device, and no information leaves your device through our application.
 
 ## Information We Don't Collect
 
